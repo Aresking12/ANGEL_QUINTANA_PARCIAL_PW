@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Bienvenida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="page-label">PÁGINA PRINCIPAL - INICIO</div>
+            <h1 id="titulo-bienvenida">¡Bienvenido!</h1>
+            <p id="mensaje-usuario" class="user-name"></p>
+        </header>
+
+        <section class="descripcion">
+            <h2>Sobre este sitio web</h2>
+            <p>Este sitio contiene tres secciones principales que podrás explorar:</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>📊 Página 2</h3>
+                    <p>Aquí encontrarás contenido informativo y datos estadísticos interesantes.</p>
+                </div>
+                <div class="card">
+                    <h3>🎨 Página 3</h3>
+                    <p>Una galería visual con elementos creativos y diseños innovadores.</p>
+                </div>
+                <div class="card">
+                    <h3>📬 Página 4</h3>
+                    <p>Sección de contacto donde podrás comunicarte y dejar tus comentarios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="navegacion">
+            <h2>Explora las secciones</h2>
+            <div class="botones-container">
+                <button class="btn-animado btn-1" onclick="irAPagina('pagina2.html')">
+                    <span>Ir a Página 2</span>
+                    <div class="animacion"></div>
+                </button>
+                <button class="btn-animado btn-2" onclick="irAPagina('pagina3.html')">
+                    <span>Ir a Página 3</span>
+                    <div class="animacion"></div>
+                </button>
+                <button class="btn-animado btn-3" onclick="irAPagina('pagina4.html')">
+                    <span>Ir a Página 4</span>
+                    <div class="animacion"></div>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Bienvenida -->
+    <div id="modal-bienvenida" class="modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido a nuestro sitio!</h2>
+            <p>Por favor, ingresa tus datos para continuar:</p>
+            <form id="form-usuario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido">
+                </div>
+                <button type="submit" class="btn-submit">Continuar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
