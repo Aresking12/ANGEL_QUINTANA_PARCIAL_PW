@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Tabla de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="page-label">PÁGINA 3 - TABLA DE DATOS</div>
+            <h1 id="titulo-pagina3">Tabla de Información</h1>
+            <p id="mensaje-usuario-p3" class="user-name"></p>
+        </header>
+
+        <section class="tabla-section">
+            <h2>Datos de Estudiantes</h2>
+            <p class="subtitulo">Información académica del semestre actual</p>
+            
+            <div class="tabla-container">
+                <table class="tabla-animada">
+                    <thead>
+                        <tr>
+                            <th class="header-animado header-1">
+                                <span>Nombre</span>
+                            </th>
+                            <th class="header-animado header-2">
+                                <span>Edad</span>
+                            </th>
+                            <th class="header-animado header-3">
+                                <span>Promedio</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="fila-datos">
+                            <td data-label="Nombre">Juan Pérez</td>
+                            <td data-label="Edad">22</td>
+                            <td data-label="Promedio">8.5</td>
+                        </tr>
+                        <tr class="fila-datos">
+                            <td data-label="Nombre">María González</td>
+                            <td data-label="Edad">20</td>
+                            <td data-label="Promedio">9.2</td>
+                        </tr>
+                        <tr class="fila-datos">
+                            <td data-label="Nombre">Carlos Rodríguez</td>
+                            <td data-label="Edad">23</td>
+                            <td data-label="Promedio">7.8</td>
+                        </tr>
+                        <tr class="fila-datos">
+                            <td data-label="Nombre">Ana Martínez</td>
+                            <td data-label="Edad">21</td>
+                            <td data-label="Promedio">9.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tabla-estadisticas">
+                <div class="stat-card">
+                    <h3>Total Estudiantes</h3>
+                    <p class="stat-numero">4</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Promedio General</h3>
+                    <p class="stat-numero">8.75</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Edad Promedio</h3>
+                    <p class="stat-numero">21.5</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <section class="navegacion">
+            <h2>Navegar a otras páginas</h2>
+            <div class="botones-container">
+                <button class="btn-animado btn-1" onclick="irAPagina('index.html')">
+                    <span>Inicio</span>
+                </button>
+                <button class="btn-animado btn-2" onclick="irAPagina('pagina2.html')">
+                    <span>Página 2</span>
+                </button>
+                <button class="btn-animado btn-3" onclick="irAPagina('pagina4.html')">
+                    <span>Página 4</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="pagina3.js"></script>
+      <footer>
+            <p>Sitio Web Oficial - Cooperativa San Juan</p>
+            <div class="copyright">
+                © 2025 Angel Quintana
+            </div>
+        </footer>
+</body>
+</html>

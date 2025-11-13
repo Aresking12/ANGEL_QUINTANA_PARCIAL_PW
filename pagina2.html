@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Galería de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="page-label">PÁGINA 2 - GALERÍA DE IMÁGENES</div>
+            <h1 id="titulo-pagina2">Galería de Imágenes</h1>
+            <p id="mensaje-usuario-p2" class="user-name"></p>
+            <p id="mensaje-edad" class="edad-mensaje"></p>
+        </header>
+
+        <section class="galeria-section">
+            <h2>Explora Nuestra Galería</h2>
+            <p class="subtitulo">Pasa el mouse sobre cada imagen para ver el efecto</p>
+            
+            <div class="galeria">
+                <!-- Imagen 1 - Animación Zoom -->
+                <div class="galeria-item animacion-zoom">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop" 
+                         alt="Montañas" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&h=500&fit=crop" 
+                         alt="Montañas alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Montañas</h3>
+                        <p>Animación Zoom</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 - Animación Rotación -->
+                <div class="galeria-item animacion-rotar">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=500&fit=crop" 
+                         alt="Playa" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=500&h=500&fit=crop" 
+                         alt="Playa alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Playa</h3>
+                        <p>Animación Rotación</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 - Animación Deslizar -->
+                <div class="galeria-item animacion-deslizar">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=500&fit=crop" 
+                         alt="Bosque" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&h=500&fit=crop" 
+                         alt="Bosque alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Bosque</h3>
+                        <p>Animación Deslizar</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 4 - Animación Flip -->
+                <div class="galeria-item animacion-flip">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=500&fit=crop" 
+                         alt="Cascada" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=500&h=500&fit=crop" 
+                         alt="Cascada alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Cascada</h3>
+                        <p>Animación Flip</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 5 - Animación Escala -->
+                <div class="galeria-item animacion-escala">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop" 
+                         alt="Desierto" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=500&h=500&fit=crop" 
+                         alt="Desierto alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Desierto</h3>
+                        <p>Animación Escala</p>
+                    </div>
+                </div>
+
+                <!-- Imagen 6 - Animación Fade -->
+                <div class="galeria-item animacion-fade">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=500&h=500&fit=crop" 
+                         alt="Lago" 
+                         class="imagen-principal">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=500&fit=crop" 
+                         alt="Lago alternativa" 
+                         class="imagen-hover">
+                    <div class="overlay">
+                        <h3>Lago</h3>
+                        <p>Animación Fade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegación -->
+        <section class="navegacion">
+            <h2>Navegar a otras páginas</h2>
+            <div class="botones-container">
+                <button class="btn-animado btn-1" onclick="irAPagina('index.html')">
+                    <span>Inicio</span>
+                </button>
+                <button class="btn-animado btn-2" onclick="irAPagina('pagina3.html')">
+                    <span>Página 3</span>
+                </button>
+                <button class="btn-animado btn-3" onclick="irAPagina('pagina4.html')">
+                    <span>Página 4</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal de Edad -->
+    <div id="modal-edad" class="modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido!</h2>
+            <p id="saludo-nombre"></p>
+            <p>Por favor, ingresa tu edad para continuar:</p>
+            <form id="form-edad">
+                <div class="form-group">
+                    <label for="edad">Tu edad:</label>
+                    <input type="number" id="edad" name="edad" required placeholder="Ingresa tu edad" min="1" max="120">
+                </div>
+                <button type="submit" class="btn-submit">Continuar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="pagina2.js"></script>
+      <footer>
+            <p>Sitio Web Oficial - Cooperativa San Juan</p>
+            <div class="copyright">
+                © 2025 Angel Quintana
+            </div>
+        </footer>
+</body>
+</html>
