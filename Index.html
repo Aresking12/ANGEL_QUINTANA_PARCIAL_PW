@@ -3,75 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal - Bienvenida</title>
+    <title>Rafael Nadal - Página Principal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="page-label">PÁGINA PRINCIPAL - INICIO</div>
-            <h1 id="titulo-bienvenida">¡Bienvenido!</h1>
-            <p id="mensaje-usuario" class="user-name"></p>
-        </header>
-
-        <section class="descripcion">
-            <h2>Sobre este sitio web</h2>
-            <p>Este sitio contiene tres secciones principales que podrás explorar:</p>
-            <div class="cards">
-                <div class="card">
-                    <h3>📊 Página 2</h3>
-                    <p>Aquí encontrarás contenido informativo y datos estadísticos interesantes.</p>
-                </div>
-                <div class="card">
-                    <h3>🎨 Página 3</h3>
-                    <p>Una galería visual con elementos creativos y diseños innovadores.</p>
-                </div>
-                <div class="card">
-                    <h3>📬 Página 4</h3>
-                    <p>Sección de contacto donde podrás comunicarte y dejar tus comentarios.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="navegacion">
-            <h2>Explora las secciones</h2>
-            <div class="botones-container">
-                <button class="btn-animado btn-1" onclick="irAPagina('pagina2.html')">
-                    <span>Ir a Página 2</span>
-                    <div class="animacion"></div>
-                </button>
-                <button class="btn-animado btn-2" onclick="irAPagina('pagina3.html')">
-                    <span>Ir a Página 3</span>
-                    <div class="animacion"></div>
-                </button>
-                <button class="btn-animado btn-3" onclick="irAPagina('pagina4.html')">
-                    <span>Ir a Página 4</span>
-                    <div class="animacion"></div>
-                </button>
-            </div>
-        </section>
-    </div>
-
-    <!-- Modal de Bienvenida -->
-    <div id="modal-bienvenida" class="modal">
-        <div class="modal-content">
-            <h2>¡Bienvenido a nuestro sitio!</h2>
-            <p>Por favor, ingresa tus datos para continuar:</p>
-            <form id="form-usuario">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu apellido">
-                </div>
-                <button type="submit" class="btn-submit">Continuar</button>
-            </form>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">RAFA NADAL</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="blog.html">Trayectoria</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
 
-    <script src="script.js"></script>
-    
+    <section class="hero">
+        <div class="container">
+            <h1 class="animated-title">RAFAEL NADAL</h1>
+            <p class="subtitle">El Rey de la Tierra Batida</p>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container">
+            <h2>Bienvenido</h2>
+            <p class="intro-text">
+                Explora la increíble carrera de uno de los mejores tenistas de todos los tiempos.
+                Este sitio web te ofrece un recorrido completo por la vida profesional de Rafael Nadal.
+            </p>
+
+            <div class="buttons-grid">
+                <a href="perfil.html" class="animated-btn btn-1">
+                    <span>Perfil Profesional</span>
+                    <p class="btn-description">Conoce la biografía y carrera de Rafa</p>
+                </a>
+
+                <a href="galeria.html" class="animated-btn btn-2">
+                    <span>Galería de Imágenes</span>
+                    <p class="btn-description">Momentos memorables en imágenes</p>
+                </a>
+
+                <a href="blog.html" class="animated-btn btn-3">
+                    <span>Trayectoria</span>
+                    <p class="btn-description">Pasos clave en su carrera profesional</p>
+                </a>
+
+                <a href="estadisticas.html" class="animated-btn btn-4">
+                    <span>Estadísticas</span>
+                    <p class="btn-description">Números que marcan la historia</p>
+                </a>
+
+                <a href="contacto.html" class="animated-btn btn-5">
+                    <span>Contacto</span>
+                    <p class="btn-description">Redes sociales y más información</p>
+                </a>
+            </div>
+
+            <div class="content-preview">
+                <div class="preview-card color-cycle-box">
+                    <h3>Perfil Profesional</h3>
+                    <p>Descubre la biografía completa de Rafael Nadal, su trayectoria profesional detallada en una tabla cronológica y sus datos de contacto con enlaces a redes sociales.</p>
+                </div>
+
+                <div class="preview-card">
+                    <h3>Galería de Imágenes</h3>
+                    <p>Una colección de 8 imágenes icónicas con animaciones únicas que capturan los mejores momentos de la carrera de Rafa Nadal en las canchas más importantes del mundo.</p>
+                </div>
+
+                <div class="preview-card">
+                    <h3>Blog Profesional</h3>
+                    <p>Explora las diferentes etapas de su carrera, desde sus inicios hasta convertirse en leyenda, pasando por clubes, competencias y logros históricos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 13/11/2025 - Creado por Angel Quintana</p>
+    </div>
+</footer>
+
 </body>
 </html>
